@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500&display=swap');
+
+/*
+um ponto: pasta atual
+dois pontos: pasta anterior
+
+*/
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+
+    --cor0: #def2e7;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', var(--fonte-padrao);
+    --fonte--android: 'Android', var(--fonte-padrao);
+}
+
+img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+
+}
+
+body {
+
+    background-image: linear-gradient(
+        var(--cor4),
+        var(--cor1),
+        rgb(48, 125, 57),
+        var(--cor4),
+        var(--cor1)
+    );
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+
+}
+
+header {
+
+font-size: 130%;
+    text-align: center;
+
+}
+
+header > h1 {
+
+    color: rgb(0, 42, 15);
+    font-family: var(--fonte-destaque);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.37);
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: var(--cor2);
+    border-radius: 5px;
+
+}
+
+header > h1:hover {
+
+    background-color: var(--cor0);
+
+}
+
+header > p {
+
+    color:var(--cor0);
+
+}
+
+nav {
+
+    text-align: center;
+    font-size: 150%;
+    background-color:  var(--cor5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.214);
+
+}
+
+nav a {
+
+    margin-left: 45px;
+    margin-right: 45px;
+
+}
+
+a:hover {
+
+    color: var(--cor0);
+
+}
+a {
+
+    color: #3ddc84;
+
+}
+
+main {
+
+    background-color: var(--cor0);
+    display: block;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.214);
+
+}
+
+article {
+
+    font-size: 130%;
+    padding: 20px;
+
+}
+
+main h1 {
+
+    color: var(--cor5);
+    font-family: var(--fonte--android);
+
+}
+
+main h2 {
+
+    color: var(--cor5);
+    font-family: var(--fonte--android);
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+div.container-referencias {
+    margin-right: 50px;
+}
+
+div > h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+
+    background-color: var(--cor5);
+    color: var(--cor0);
+
+}
+
+footer h2 {
+
+    color: var(--cor3);
+
+}
+
+.irina-img{
+
+    width: 80%;
+    border: 8px solid var(--cor5);
+
+}
+
+iframe {
+
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    border: 8px solid var(--cor5);
+
+}
+
+footer div {
+
+    display: block;
+    margin: 0px 10px 10px 10px;
+
+}
+
+@media only screen and (min-width: 1800px) {
+    
+    .bugdroid-img {
+
+        width: 30%;
+    }
+
+    .irina-img{
+
+        width: 68%;
+    
+    }
+
+    img {
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 80px;
+
+    }
+
+    main {
+
+        margin-top: 50px;
+        margin-left: 380px;
+        margin-right: 380px;
+
+    }
+
+    header > h1 {
+
+        margin-left: 380px;
+        margin-right: 380px;
+
+    }
+
+    article {
+
+    margin: 30px;
+
+    }
+
+    body{
+
+        font-size: 130%;
+    }
+
+    iframe {
+        
+        margin-top: 80px;
+        margin-bottom: 100px;
+        width: 60%;
+
+    }
+
+    nav{
+
+    margin-left: 380px;
+    margin-right: 380px;
+
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .bugdroid-img {
+
+        width: 60%;
+    }
+
+    .irina-img{
+
+        width: 68%;
+    
+    }
+
+    img {
+
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+    }
+
+    main {
+
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    header > h1 {
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    article {
+
+        margin: 30px;
+
+    }
+
+    iframe {
+        
+        margin-top: 50px;
+        margin-bottom: 80px;
+        width: 100%;
+
+    }
+
+    nav a{
+
+        text-align: center;
+        margin: 3px;
+
+    }
+
+    nav span {
+
+        display: inline-grid;
+
+    }
+
+    span.container-nav-1 {
+        padding-right: 30px;
+    }
+    
+    span.container-nav-2 {
+        padding-left: 30px;
+    }
+
+    nav{
+
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+
+}
