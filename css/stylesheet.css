@@ -135,6 +135,12 @@ article {
 
 }
 
+article p {
+    text-align: justify;
+    text-indent: 1.5em;
+    margin-top: 1em;
+}
+
 main h1 {
 
     color: var(--cor5);
